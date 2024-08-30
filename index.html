@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport " content="width=device-width,inatial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https:// fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <title>weather-App</title>
+    <link rel="sheetstyle" href="src/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <style>
+        body {
+            background-color: hsl(257, 78%, 98%);
+            font-family: Roboto, sans-serif
+        }
+        
+        a {
+            color: #885df1;
+        }
+        
+        .weather-app {
+            background: white;
+            max-width: 600px;
+            margin: 45px auto;
+            box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+            border-radius: 16px;
+            padding: 30px;
+        }
+        
+        .search-form-input {
+            background: #f9f7fe;
+            border: none;
+            border-radius: 6px;
+            width: 80%;
+            font-size: 16px;
+            padding: 15px 20px;
+        }
+        
+        header {
+            border-bottom: 1px solid #f9f7fe;
+            padding: 0 0 30px 0;
+        }
+        
+        .search-form-button {
+            background: #885df1;
+            padding: 15px 20px;
+            border: none;
+            font-size: 16px;
+            margin-left: 5px;
+            border-radius: 6px;
+            color: white;
+        }
+        
+        .search-form {
+            display: flex;
+        }
+        
+        main {
+            padding: 30px 0 0;
+        }
+        
+        .weather-app-city {
+            margin: 0;
+            font-size: 30px;
+            line-height: 48px;
+        }
+        
+        .weather-app-details {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500px;
+            color: rgba(39, 33, 66, 0.4)
+        }
+        
+        .weather-app-details strong {
+            color: #f65282;
+        }
+        
+        .weather-app-temperature-container {
+            display: flex;
+        }
+        
+        .weather-app-icon {
+            font-size: 44px;
+            margin-top: 22px;
+        }
+        
+        .weather-app-temperature {
+            font-size: 88px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        
+        .weather-app-unit {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        
+        main {
+            padding: 30px 0;
+        }
+        
+        .weather-app-data {
+            max-width: 600px;
+            margin: 45px auto;
+            box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+            border-radius: 16px;
+            padding: 30px;
+        }
+        
+        .weather-degree-details {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        footer {
+            border-top: 1px solid #f9f7fe;
+            padding: 30px 0 0 0;
+            text-align: center;
+            font-size: 14px;
+            color: rgba(0, 0, 0, o.6);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="weather-app-data">
+        <header>
+            <form class="search-form" id="search-form">
+                <input type="search" placeholder="Enter your city" required id="search-form-input" class="search-form-input" />
+                <input type="submit" value="search " class="search-form-button" />
+            </form>
+        </header>
+        <main>
+            <div class="weather-degree-details">
+                <div>
+                    <h1 class="weather-app-city">pretoria</h1>
+                    <p class="weather-app-detials">
+                        Wednesday 16:00 sunny
+                        <br />
+                    </p>
+                    <p>Humidity:<strong>70%</strong> wind:<strong>7.10km/h</strong>
+                    </p>
+                </div>
+                <div class="weather-app-temperature-container">
+                    <div class="weather-app-icon">🌞</div>
+                    <div class="weather-app-temperature">35</div>
+                    <div class="weather-app-unit">°C</div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            This project was Coded by
+            <a href=" https://github.com/1130Masondo " target="_blank "> cece masondo</a>, coded hosted on </a>
+            <a href="https://github.com/1130Masondo/project-shecodes/blob/main/project%201.html " target="_blank ">Github</a> website hosted
+            <a href=" https://app.netlify.com/sites/shecodes-app-project/configuration/general " target="_blank ">on
+                Netlify</a>
+        </footer>
+    </div>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
